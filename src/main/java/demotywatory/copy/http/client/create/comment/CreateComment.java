@@ -22,6 +22,7 @@ public class CreateComment {
         ObjectMapper objectMapper = new ObjectMapper();
         String content = "no takie se";
         String bodyJson = objectMapper.writeValueAsString(CreateCommentRequest.builder().content(content).build());
+        System.out.println(bodyJson);
         HttpRequest request = defaultRequest()
                 .uri(URI.create(API_PREFIX + "/api/posts/1/comments"))
                 .POST(HttpRequest.BodyPublishers.ofString(bodyJson))

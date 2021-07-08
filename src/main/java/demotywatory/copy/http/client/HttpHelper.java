@@ -10,6 +10,6 @@ public class HttpHelper {
                 .header("Authorization", "Basic YWRtaW46YWRtaW4xMjM=");
     }
 
-    public static String API_PREFIX = "https://localhost:8080";
+    public static String API_PREFIX = "https://rocky-fjord-69059.herokuapp.com";
 
 }
